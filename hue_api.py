@@ -43,7 +43,7 @@ class HueBridge:
         """
         Provide a dictionary of all available lamps and capabilities
         """
-        return rest.send(url=self.lights_url, headers={'Accept': 'application/json'})
+        return rest.send(url=self.lights_url)
 
     def turn_all_off(self):
         """
