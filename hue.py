@@ -44,9 +44,9 @@ if __name__ == '__main__':
         rest.send('PUT', url_to_call, body, {'Content-Type': 'application/json'})
     
     # wait 10 seconds...
-    for i in range(0, 20):
+    for i in range(0, 10):
         time.sleep(1)
-        print 20-i
+        print 10-i
     
     # iterate over the Hue lights and turn them off
     for light in all_the_lights:
